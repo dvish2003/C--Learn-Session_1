@@ -61,5 +61,29 @@ class Program
         dog.eat(); // Inherited method from Animal class
         dog.bark(); // Method from Dog class
 
+        //interface
+        Cat cat = new Cat();
+        cat.eat(); // Implementation of eat method from IAnimal interface
+
+        //using the UserService class to create a user
+        UserService userService = new UserService();
+        userService.CreateUser("Alice", 30);
+
+
+
+
+        //. create list
+        List<string> names = new List<string>();
+        names.Add("Alice");
+        names.Add("Bob");
+        names.Add("Charlie");   
+        Console.WriteLine("Names in the list:");
+        foreach (string name in names)
+        {
+            Console.WriteLine(name);
+        }
+
+        
+
     }
 }
